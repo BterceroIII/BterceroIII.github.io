@@ -272,7 +272,7 @@ img{
     }
 
     .producto:nth-child(1) img{
-        height: 43rem;
+        height: 50rem;
         width: 100%;
         object-fit: cover;
     }
@@ -334,9 +334,11 @@ img{
 .texto-producto h3{
     margin: 0;
 }
+
 .texto-producto p{
     margin: 0 0 4rem 0;
 }
+
 .texto-producto .precio{
     color: var(--secundario);
     font-size: 2.8rem;
