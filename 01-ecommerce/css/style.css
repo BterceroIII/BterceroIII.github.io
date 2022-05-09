@@ -24,7 +24,7 @@ body{
 /* Globales */
 h1,h2,h3{
     font-family: 'Roboto Mono', monospace;
-    margin: 0 0 2rem 0;
+    margin: 0 0 4rem 0;
 }
 
 h1{
@@ -138,8 +138,7 @@ img{
 }
 
 .nav-principal a:hover{
-    background-color: var(--cuarto);
-    color: var(--secundario);
+    color: var(--cuarto);
     transition: 0.5s;
 }
 
@@ -161,6 +160,7 @@ img{
     background-size: cover;
     background-position: center center;
     height: 25rem;
+    
 }
 
 @media (min-width: 768px){
@@ -335,7 +335,7 @@ img{
     margin: 0;
 }
 .texto-producto p{
-    margin: 0 0 .5rem 0;
+    margin: 0 0 4rem 0;
 }
 .texto-producto .precio{
     color: var(--secundario);
@@ -493,6 +493,7 @@ img{
 .formulario{
     max-width: 60rem;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .formulario fieldset{
