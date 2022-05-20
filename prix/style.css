@@ -1,0 +1,154 @@
+:root{
+    --Primario: #c4c4c4;
+    --Secundario: #dc1b32;
+
+    --titulo__text: 'PT Sans', sans-serif;
+    --parrafos__text: 'Open Sans', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+
+/* globales */
+
+a{
+    text-decoration: none;
+    font-family: var(--parrafos__text);
+}
+h1,h2,h3,h4,p{
+    font-family: var(--parrafos__text);
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+
+.boton{
+    display: block;
+    font-family: var(--parrafos__text);
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+.boton--primario{
+    background-color: var(--Secundario);
+}
+/* run */
+
+.header .header__contenedor{
+    background-color: var(--Primario);
+    width: 100%;
+    height: 10rem;
+}
+
+.header__navegacion{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-evenly;
+}
+
+.header__enlace{
+    color: black;
+}
+/* styling search bar */
+.search input[type=text]{
+    font-family: var(--parrafos__text);
+    width: 50rem;
+    height: 4rem;
+}
+
+.search{
+    float:right;
+}
+
+.search button{
+    background-color: var(--Secundario);
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    height: 4rem;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 
+
+.header__icon{
+    width: 2rem;
+    height: 2rem;
+}
+.heart{
+    color: #dc1b32;
+}
+
+.carrito{
+    color: black;
+}
+
+.header__hero{
+    background-image: url(img/hero1.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom ;
+}
+.header__hero .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10rem;
+}
+
+.header__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem;
+    background-color: white;
+    width: 60rem;
+    height: 40rem;
+}
+.header__texto p{
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+.boton--primario:hover{
+    transition: 400ms;
+    background-color: orangered;
+}
