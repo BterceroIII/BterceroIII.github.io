@@ -174,10 +174,6 @@ img{
     text-align: justify;
     font-size: 2rem;
 }
-.nosotros__img{
-    width: 80rem;
-    padding: 2rem;
-}
 
 .nosotros__boton{
     display: flex;
