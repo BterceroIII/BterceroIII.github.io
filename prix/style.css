@@ -25,7 +25,9 @@ body{
 .no-padding{
     padding: 0;
 }
-
+.text-center{
+    text-align: center;
+}
 /* globales */
 
 a{
@@ -151,4 +153,34 @@ img{
 .boton--primario:hover{
     transition: 400ms;
     background-color: orangered;
+}
+
+
+/* nosotros */
+
+.nosotros{
+    padding: 4rem;
+    background-color: var(--Primario);
+}
+
+.nosotros__grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.nosotros__texto{
+    text-align: justify;
+    font-size: 2rem;
+}
+.nosotros__img{
+    width: 80rem;
+    padding: 2rem;
+}
+
+.nosotros__boton{
+    display: flex;
+    justify-content: end;
+    padding-top: 4rem;
 }
