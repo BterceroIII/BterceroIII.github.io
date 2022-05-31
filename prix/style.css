@@ -81,10 +81,11 @@ img{
 }
 
 .header__navegacion{
-    display: flex;
-    padding-top: 3rem;
-    justify-content: space-evenly;
+        display: flex;
+        padding-top: 3rem;
+        justify-content: space-evenly;
 }
+    
 
 .header__enlace{
     color: black;
