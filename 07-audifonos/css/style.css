@@ -381,12 +381,97 @@ img{
 
     .modelo:hover{
         transform: scale(1.1);
-        background-size: 25rem;
+        background-size: 30rem;
     }
     
 }
 
 
+/* formulario */
 
+.newsletter{
+    background-image: linear-gradient(to bottom,transparent 50%, var(--blanco) 0%),url(/img/newsletter.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%, 85rem;
+}
+
+@media (min-width: 768px){
+    .newsletter{
+        background-image: linear-gradient(to right,transparent 50%, var(--blanco) 0%),url(/img/newsletter.jpg);
+        background-position: center, -21rem 0rem;
+        background-repeat: no-repeat;
+        background-size: 100%, 100rem;
+        padding: 10rem 0;
+    }
+}
+
+@media (min-width: 2200px){
+    .newsletter{
+        background-size: 100%,200rem;
+        background-position: center, 0% -30rem;
+    }
+}
+
+.contenido-newletter{
+    display: grid;
+    grid-template-rows: repeat(2,45rem);
+    gap: var(--separacion);
+}
+@media (min-width: 768px){
+    .contenido-newletter{
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.texto-newletter{
+    grid-row: 2/3;
+}
+
+@media (min-width: 768px){
+    .texto-newletter{
+        grid-row: unset;
+        grid-column: 2/3;
+    }    
+}
+
+.formulario input[type="text"]{
+    width: 100%;
+    padding: 1rem;
+}
+
+.formulario input[type="submit"]{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    transition-property: transform color;
+    transition-duration: .3s;
+}
+
+.formulario input[type="submit"]:hover{
+    transform: scale(1.05);
+    color: var(--secundario);
+}
+
+/* footer */
+footer{
+    padding: 1rem 0;
+    width: 100%;
+    background-color: var(--primario);
+}
+.footer p{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.4rem;
+    padding:  0 2rem;
+}
 
 
