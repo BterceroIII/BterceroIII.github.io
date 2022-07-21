@@ -90,11 +90,7 @@ img{
     padding: 5rem 0;
 }
 
-@media (min-width: 768px){
-    .header{
-        padding: 2rem 0;
-    }
-}
+
 
 .contenido-header{
     display: flex;
@@ -137,4 +133,79 @@ img{
     .contacto{
         align-items: end;
     }
+}
+.telefono{
+    display: flex;
+    gap: 1rem;
+}
+.telefono::before{
+    content: '';
+    display: block;
+    background-image: url(/img/telefono.png);
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header a{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.navegacion a{
+    padding: .5rem;
+    transition: background-color 300ms;
+    border-radius: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .navegacion a{
+        padding: 1rem 2rem;
+    }
+}
+.navegacion a:hover{
+    background-color: rgb(255 255 255 / .5);
+    color: var(--negre);
+}
+
+.slogan{
+    text-align: center;
+}
+@media (min-width: 768px){
+    .slogan{
+        text-align: right;
+    }
+}
+
+.slogan h1{
+    font-size: 2rem;
+    margin: 0;
+}
+@media (min-width: 768px){
+    .slogan h1{
+        font-size: 5rem
+    }
+}
+
+.slogan p{
+    margin: 0;
+    line-height: 1;
 }
