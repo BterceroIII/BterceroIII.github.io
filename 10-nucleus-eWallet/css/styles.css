@@ -204,6 +204,7 @@ img {
 }
 
 .listado__elemento{
+    background-color: var(--blanco);
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 /.15);
     border-radius: 10px;
     padding: 2rem;
@@ -226,3 +227,54 @@ img {
     margin: 0;
     font-size: 2rem;
 }
+
+/* Seguridad */
+
+/*todo: efecto de diagonal  */
+
+.seguridad{
+    background-color: var(--secundario);
+    padding: 20rem 0;
+    position: relative;
+    margin: 10rem 0;
+    overflow: hidden;
+}
+.seguridad::before,
+.seguridad::after{
+    background-color: var(--blanco);
+    content: '';
+    height: 20rem;
+    width: 150%;
+    position: absolute;
+}
+
+.seguridad::before{
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+
+.seguridad::after{
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(-3deg);
+}
+
+/*todo: efecto de diagonal  */
+
+.seguridad__heading{
+    text-align: center;
+    color: var(--blanco);
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px){
+    .seguridad__grid{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        align-items: center;
+        gap: 5rem;
+    }
+}
+
+
