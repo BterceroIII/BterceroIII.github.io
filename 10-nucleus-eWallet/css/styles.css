@@ -1,5 +1,6 @@
 :root {
     --primario: #6834a6;
+    --secundario: #2c2a4a;
     --blanco: #FFF;
     --negro: #000000;
     --fuentePrincipal: 'Poppins', sans-serif;
@@ -41,3 +42,239 @@ img {
     margin: 0 auto;
     width: 90%;
 }
+
+
+/* Header */
+
+.header{
+    background-image: url(/img/header_bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 10rem;
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px){
+    .header{
+        background-size: 60rem;
+    }
+    
+}
+
+@media (min-width: 992px){
+    .header{
+        background-size: 70rem;
+    }
+}
+
+
+@media (min-width: 1280px){
+    .header{
+        background-size: 80rem;
+    }
+}
+
+
+@media (min-width: 768px){
+    .header__barra{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+.header__logo{
+    width: 15rem;
+    margin: 0 auto 3rem auto;
+}
+@media (min-width: 768px){
+    .header__logo{
+        margin: 0;
+    }
+    .header__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 4rem;
+        align-items: center;
+    }
+}
+
+.header__heading{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+@media (min-width: 768px){
+    .header__heading{
+        text-align: left;
+        font-size: 5rem;
+    }
+}
+@media (min-width: 768px){
+    
+    .header__imagen{
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+}
+
+.header__boton{
+    background-color: var(--primario);
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: var(--blanco);
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    transition:  300ms;
+}
+@media (min-width: 768px){
+    .header__boton{
+        display: inline-block;
+        padding: 1rem 3rem;
+    }
+}
+
+.header__boton:hover{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    transform: scale(1.05);
+}
+
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+}
+
+.navegacion__link{
+    color: var(--primario);
+}
+
+@media (min-width: 768px){
+    .navegacion__link{
+        color: var(--blanco);
+    }
+}
+
+/* main */
+
+.nucleus{
+    margin-top: 3rem;
+}
+
+.nucleus__heading{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+[class$="__contenedor"]{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.nucleus__grid{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 768px){
+    .nucleus__grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .nucleus__imagen{
+        width: 30rem;
+        margin: 0 auto;
+    }
+}
+
+.listado__elemento{
+    background-color: var(--blanco);
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 /.15);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.listado__elemento:hover{
+    transform: scale(1.09);
+}
+
+.listado__heading{
+    font-size: 3rem;
+    color: var(--primario);
+    margin: 0;
+}
+
+.listado__texto{
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Seguridad */
+
+/*todo: efecto de diagonal  */
+
+.seguridad{
+    background-color: var(--secundario);
+    padding: 20rem 0;
+    position: relative;
+    margin: 10rem 0;
+    overflow: hidden;
+}
+.seguridad::before,
+.seguridad::after{
+    background-color: var(--blanco);
+    content: '';
+    height: 20rem;
+    width: 150%;
+    position: absolute;
+}
+
+.seguridad::before{
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+
+.seguridad::after{
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(-3deg);
+}
+
+/*todo: efecto de diagonal  */
+
+.seguridad__heading{
+    text-align: center;
+    color: var(--blanco);
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px){
+    .seguridad__grid{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        align-items: center;
+        gap: 5rem;
+    }
+}
+
+
